@@ -26,6 +26,7 @@ const graphTiming = {
 }
 
 function changeGraph() {
+  console.log(`path("${generatePath((x)=>-0.005*x*x)}")`.length)
   if (!curveIsChanged) {
     document.getElementById('myPath').animate(graphAttrs1, graphTiming)
   } else {
